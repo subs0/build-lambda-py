@@ -19,7 +19,7 @@ You will see a working example in the [example](./example) directory.
         "build": "lambda build parent"
     },
     "dependencies": {
-        "lambda": "file:./node_modules/@-0/build-lambda-py/index.js"
+        "lambda": "file:./node_modules/@-0/build-lambda-py"
     },
     "devDependencies": {
         "@-0/build-lambda-py": "^1.0.2"

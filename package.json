@@ -4,15 +4,21 @@
     "type": "module",
     "description": "Node CLI for building Python Lambda packages using Poetry",
     "main": "index.js",
+    "repository": "https://github.com/subs0/build-lambda-py",
+    "homepage": "https://github.com/subs0/build-lambda-py/#readme",
     "scripts": {
-        "example": "node build-lambda-py build example"
+        "example": "npx @-0/build-lambda-py build example/parent"
     },
     "keywords": [
-        "poetry",
-        "lambda",
-        "python",
         "aws",
-        "cli"
+        "cli",
+        "js",
+        "lambda",
+        "module",
+        "node",
+        "npm",
+        "poetry",
+        "python"
     ],
     "author": "loganpowell",
     "license": "MIT",

@@ -3,7 +3,6 @@ name = "src"
 version = "0.1.1"
 description = "generates presigned AWS S3 URLs for file get/post"
 authors = ["loganpowell <loganp@tepper.cmu.edu>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.9"

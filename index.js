@@ -151,7 +151,7 @@ const main = async () => {
             const projectPath = path.join(process.cwd(), parent)
             const outputPath = path.join(projectPath, outDir)
             const outFile = path.join(outputPath, `${directory}.zip`)
-            const tempDir = 'package'
+            const tempDir = '__package'
             const tmpPath = path.join(projectPath, tempDir)
 
             if (fs.existsSync(outputPath)) {

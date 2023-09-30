@@ -9,9 +9,9 @@
         "build": "lambda build parent"
     },
     "dependencies": {
-        "lambda": "file:./node_modules/@-0/build-lambda-py/index.js"
+        "lambda": "file:./node_modules/@-0/build-lambda-py"
     },
     "devDependencies": {
-        "@-0/build-lambda-py": "^1.0.2"
+        "@-0/build-lambda-py": "^1.0.3"
     }
 }
