@@ -5,7 +5,7 @@
     "description": "Node CLI for building Python Lambda packages using Poetry",
     "main": "index.js",
     "scripts": {
-        "example": "lambda build example"
+        "example": "node build-lambda-py build example"
     },
     "keywords": [
         "poetry",
@@ -22,5 +22,7 @@
     "dependencies": {
         "commander": "^11.0.0"
     },
-    "bin": "./index.js"
+    "bin": {
+        "lambda": "./index.js"
+    }
 }
