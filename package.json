@@ -1,6 +1,6 @@
 {
     "name": "@-0/build-lambda-py",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
     "description": "Node CLI for building Python Lambda packages using Poetry",
     "main": "index.js",
