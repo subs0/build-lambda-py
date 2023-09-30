@@ -60,5 +60,5 @@ zipping      : package as: upload_mp.zip
 ## Installation
 
 ```
-npm install @-0/build-lambda-py
+npm install -g @-0/build-lambda-py
 ```
