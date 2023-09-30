@@ -1,0 +1,16 @@
+{
+    "name": "build-lambda-py.js",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "build-lambda-py.js",
+    "scripts": {
+        "example": "node build-lambda-py build example"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^11.0.0"
+    }
+}
