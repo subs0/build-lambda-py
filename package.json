@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "type": "module",
     "description": "Node CLI for building Python Lambda packages using Poetry",
-    "main": "build-lambda-py.js",
+    "main": "index.js",
     "scripts": {
         "example": "node build-lambda-py build example"
     },
@@ -15,7 +15,7 @@
         "cli"
     ],
     "author": "loganpowell",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "commander": "^11.0.0"
     }
