@@ -12,6 +12,6 @@
         "lambda": "file:./node_modules/@-0/build-lambda-py"
     },
     "devDependencies": {
-        "@-0/build-lambda-py": "^1.0.3"
+        "@-0/build-lambda-py": "^1.0.4"
     }
 }
