@@ -1,1 +1,0 @@
-# Lambda for multipart upload

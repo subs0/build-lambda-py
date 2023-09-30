@@ -1,11 +1,67 @@
-# `build-lambda-py.js`
+# `@-0/build-lambda-py`
 
 Node CLI for building Python Lambda packages using Poetry
+## Installation
 
-## Help
+### Add CLI as a `file` Dependency for NPM Scripts
 
 ```
-> node build-lambda-py help build
+npm install -D @-0/build-lambda-py
+```
+
+You will see a working example in the [example](./example) directory.
+
+### `example/package.json`
+```json
+{
+    ...
+    "scripts": {
+        "build": "lambda build parent"
+    },
+    "dependencies": {
+        "lambda": "file:./node_modules/@-0/build-lambda-py/index.js"
+    },
+    "devDependencies": {
+        "@-0/build-lambda-py": "^1.0.2"
+    }
+    ...
+}
+```
+
+### In Use
+From inside the [`example`](./example) directory. Running `npm run build` will produce the following output:
+
+```
+npm run build
+
+> example-build-lambda-py-cli@1.0.0 build
+> lambda build parent
+
+==== Building: ...parent ====
+
+exporting    : requirements.txt...
+building     : parent from poetry.lock file...
+rolling      : wheels for dependencies...
+copying      : handler and src into package root...
+touching     : __init__.py into package root...
+zipping      : package as: parent.zip
+
+==== Zipped: ...parent/zipped/parent.zip ====
+```
+
+You will then have a nicely zipped Python Lambda package in the `zipped` directory.
+
+## Running the CLI Directly
+From inside the [`example`](./example) directory
+
+```diff
+> npx @-0/build-lambda-py build parent
+```
+
+### Help
+
+```diff
+> npx @-0/build-lambda-py help build
 Usage: build-lambda-py build [options] <parent>
 
 Builds a Python Lambda package using Poetry
@@ -32,23 +88,6 @@ Options:
   --help                display help for command
 ```
 
-## Usage
-
-```
-> node build-lambda-py build ../terraform/lambdas/upload_mp
-
-==== Building: ...terraform/lambdas/upload_mp ====
-
-exporting    : requirements.txt...
-building     : upload_mp from poetry.lock file...
-rolling      : wheels for dependencies...
-copying      : handler and src into package root...
-touching     : __init__.py into package root...
-zipping      : package as: upload_mp.zip
-
-==== Zipped: ...upload_mp/zipped/upload_mp.zip ====
-```
-
 ## Dependencies
 
 - [Node.js](https://nodejs.org/en/)
@@ -57,8 +96,3 @@ zipping      : package as: upload_mp.zip
 - [Poetry](https://python-poetry.org/)
 
 
-## Installation
-
-```
-npm install -g @-0/build-lambda-py
-```
