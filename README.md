@@ -55,3 +55,10 @@ zipping      : package as: upload_mp.zip
 - [Commander.js](https://www.npmjs.com/package/commander)
 - [Python](https://www.python.org/)
 - [Poetry](https://python-poetry.org/)
+
+
+## Installation
+
+```
+npm install @-0/build-lambda-py
+```

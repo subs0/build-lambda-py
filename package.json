@@ -1,14 +1,20 @@
 {
-    "name": "build-lambda-py.js",
+    "name": "@-0/build-lambda-py",
     "version": "1.0.0",
     "type": "module",
-    "description": "",
+    "description": "Node CLI for building Python Lambda packages using Poetry",
     "main": "build-lambda-py.js",
     "scripts": {
         "example": "node build-lambda-py build example"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "poetry",
+        "lambda",
+        "python",
+        "aws",
+        "cli"
+    ],
+    "author": "loganpowell",
     "license": "ISC",
     "dependencies": {
         "commander": "^11.0.0"
